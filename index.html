@@ -52,6 +52,9 @@
                 align-items: center;
                 justify-content: right;
                 width: 12%;
+                position: absolute;
+                right: 0px;
+                top: 0px;
                 /* height: 30px; */
                 /* border: 2px dotted red; */
                 padding: 11px 3px 9px 10px;
@@ -95,6 +98,135 @@
                 justify-content: center;
             }
 
+            .profile {
+                margin: 0;
+                padding-top: 15px;
+                /* border: 2px solid red; */
+                width: 100%;
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                /* position: absolute;
+                top: 0; */
+            }
+
+            #profile {
+                height: 30%;
+                background: url(image/readingc.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                /* background-color: ; */
+            }
+
+            #options {
+                background-color: green;
+                height: 45%;
+                font-size: 15px;
+                /* border: 2px solid yellow; */
+            }
+
+            .contact {
+                background-color: green;
+                height: 20%;
+                /* border: 2px solid red; */
+                width: 100%;
+
+            }
+
+            .contact #phone {
+                /* border: 2px dotted rebeccapurple; */
+                height: 16px;
+                font-size: 10px;
+                display: flex;
+                /* color: white; */
+                text-align: center;
+                /* margin: 0px 10px 0px 10px; */
+
+            }
+
+            .contact #email {
+                /* border: 2px dotted rgb(66, 46, 87); */
+                font-size: 10px;
+                height: 16px;
+                display: flex;
+                text-align: center;
+            }
+
+            .contact #phone img,
+            .contact #phone a,
+            .contact #email img,
+            .contact #email a {
+                margin: 0px 0px 0px 15px;
+                height: 15px;
+                font-size: 10px;
+                color: white;
+                text-decoration: none;
+            }
+
+
+
+            .contact #about {
+                /* border: 2px dotted rebeccapurple; */
+                height: 29px;
+            }
+
+            #dp {
+                margin: 0;
+                padding: 0;
+                /* border: 2px solid blue; */
+            }
+
+            #dp img {
+                width: 70px;
+                height: 70px;
+                border: 2px solid white;
+                border-radius: 35px;
+                padding: 0;
+            }
+
+            #name {
+                margin: 0;
+                padding: 0;
+                /* height: 20px; */
+                /* border: 2px solid white; */
+            }
+
+            #name label {
+                color: white;
+                /* border: 2px solid rgb(153, 136, 136); */
+                font-size: 10px;
+                margin: 0%;
+                margin: 0;
+
+            }
+
+            #status {
+                /* border: 2px solid yellow; */
+                height: 100%;
+                font-size: 10px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                color: white;
+
+            }
+
+            #status div {
+                width: 30%;
+
+            }
+
+            #status div h3 {
+                /* border: 2px solid skyblue; */
+                margin: 0;
+            }
+
+            #status div label {
+                /* border: 2px solid skyblue; */
+
+            }
+
             .nav li a {
                 color: white;
                 text-decoration: none;
@@ -127,14 +259,14 @@
 
             .change {
                 /* border: 2px solid black; */
-                background-color: green;
+                /* background-color: green; */
                 height: 100vh;
                 margin: 0;
                 position: absolute;
                 font-size: 30px;
                 top: 0;
                 z-index: -100;
-                width: 100%;
+                width: 80%;
                 display: flex;
                 flex-direction: column;
                 animation: ;
@@ -209,11 +341,42 @@
                 <div id="bar3" class="bar"></div>
             </div>
             <ul class="nav" id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Contact</a></li>
+                <div class="profile" id="profile">
+
+                    <div id="dp"><img src="image/dp.jpg" alt=""></div>
+                    <div id="name"><label for="">Sufyan Ahmad Ansari</label></div>
+                    <div id="status">
+                        <div>
+                            <h3>20</h3><label for="">Doubt Ask</label>
+                        </div>
+                        <div>
+                            <h3>20.5%</h3><label for="">Improvement</label>
+                        </div>
+                        <div>
+                            <h3>403</h3><label for="">Question Solved</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="profile" id="options">
+
+                    <li><a href="">Classes</a></li>
+                    <li><a href="">Notifications</a></li>
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">Next Task</a></li>
+                    <li><a href="">Help</a></li>
+                </div>
+                <div class="contact">
+                    <div class="message" id="phone">
+                        <img src="image/phone.png" alt="">
+                        <a href="">+91 9905223834</a>
+                    </div>
+                    <div class="message" id="email">
+                        <img src="image/email.png" alt="">
+                        <a href="">dhoolkarnain@gmail.com</a>
+                    </div>
+                    <div class="message" id="about"></div>
+                </div>
             </ul>
             <div class="search-bar-div">
                 <input type="text" name="" id="search-bar" placeholder="Search">
@@ -228,16 +391,16 @@
         </nav>
         <nav id="bottom-navigation">
             <div class="work">
-                <img class="icon" src="image/recent.png" alt="">
-                <label for="">Recents</label>
+                <img class="icon" src="image/subject.png" alt="">
+                <label for="">Subject</label>
             </div>
             <div class="work">
-                <img class="icon" src="image/heart.png" alt="">
-                <label for="">Favorites</label>
+                <img class="icon" src="image/classwork.png" alt="">
+                <label for="">classWork</label>
             </div>
             <div class="work">
-                <img class="icon" src="image/location.png" alt="">
-                <label for="">Nearby</label>
+                <img class="icon" src="image/teachers.png" alt="">
+                <label for="">Teachers</label>
             </div>
         </nav>
 
