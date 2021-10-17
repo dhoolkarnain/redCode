@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bahianita&display=swap" rel="stylesheet">
+    <title>codeRed.com</title>
+    <style>
+        @media only screen and (max-width:430px) {
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Bahianita', cursive;
+                background-color: white;
+            }
+
+            #navigation {
+                /* border: 2px solid red; */
+                position: fixed;
+                top: 0px;
+                display: flex;
+                width: 100%;
+                box-shadow: -4px 2px 12px 2px grey;
+            }
+
+            .search-bar-div {
+                /* border: 2px solid orange; */
+                width: 100%;
+                /* height: 100%; */
+                display: flex;
+
+            }
+
+            #search-bar {
+                /* border: 2px solid rgb(116, 92, 49); */
+                border: none;
+                /* height: 100%; */
+                background: none;
+                width: 73%;
+                text-align: center;
+                /* padding: 0 52px 0 52px; */
+                font-family: 'Bahianita', cursive;
+            }
+
+            .search {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                width: 12%;
+                /* height: 30px; */
+                /* border: 2px dotted red; */
+                padding: 11px 3px 9px 10px;
+            }
+
+            #menu {
+                width: 35px;
+                height: 30px;
+                padding: 18px 10px 3px 10px;
+                cursor: pointer;
+                z-index: 100;
+                /* border: 2px solid black; */
+            }
+
+            .bar {
+                height: 5px;
+                width: 100%;
+                background-color: green;
+                display: block;
+                border-radius: 5px;
+                transition: 0.3s ease;
+            }
+
+            #bar1 {
+                transform: translateY(-4px);
+            }
+
+            #bar3 {
+                transform: translateY(4px);
+            }
+
+            .nav {
+                /* border: 2px solid black; */
+                padding: 0;
+                margin: 0 20px;
+                transition: 1s ease;
+                display: none;
+                text-align: center;
+                /* display: flex; */
+                align-items: center;
+                justify-content: center;
+            }
+
+            .nav li a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .nav li a:hover {
+                color: rgb(90, 231, 90);
+            }
+
+            .nav li {
+                list-style: none;
+                padding: 16px 26px;
+            }
+
+            .icon .bar {
+                background-color: white;
+            }
+
+            .icon #bar1 {
+                transform: translateY(4px) rotate(-45deg);
+            }
+
+            .icon #bar3 {
+                transform: translateY(-6px) rotate(45deg);
+            }
+
+            .icon #bar2 {
+                opacity: 0;
+            }
+
+            .change {
+                /* border: 2px solid black; */
+                background-color: green;
+                height: 100vh;
+                margin: 0;
+                position: absolute;
+                font-size: 30px;
+                top: 0;
+                z-index: -100;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                animation: ;
+
+            }
+
+            /* plus icon section */
+            #plus-icon {
+                border: 2px solid green;
+                border-radius: 100px;
+                position: fixed;
+                bottom: 63px;
+                right: 15px;
+                display: flex;
+                justify-content: center;
+                background-color: green;
+                box-shadow: 2px 2px 12px 2px grey;
+                padding: 10px;
+
+                /* z-index: -101; */
+            }
+
+            #plus-icon img {}
+
+            /* bottom navigation section */
+
+            #bottom-navigation {
+                position: fixed;
+                bottom: 0px;
+                display: flex;
+                width: 100%;
+                background-color: green;
+                /* border: 2px solid black; */
+                height: 50px;
+                /* box-shadow: 4px -12px -12px -12px grey; */
+            }
+
+            .work {
+                /* border: 2px solid orange; */
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                /* padding: 9px; */
+                background-color: green;
+            }
+
+            .work img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .work label {
+                color: white;
+                font-size: smaller;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+
+        <nav id="navigation">
+            <!-- <div class="logo"><img src="image/logo.jpeg" alt=""></div> -->
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="search-bar-div">
+                <input type="text" name="" id="search-bar" placeholder="Search">
+                <div class="search">
+                    <img src="image/search1x.png" alt="">
+                </div>
+
+            </div>
+        </nav>
+        <nav id="plus-icon">
+            <img src="image/plusw1x.png" alt="">
+        </nav>
+        <nav id="bottom-navigation">
+            <div class="work">
+                <img class="icon" src="image/recent.png" alt="">
+                <label for="">Recents</label>
+            </div>
+            <div class="work">
+                <img class="icon" src="image/heart.png" alt="">
+                <label for="">Favorites</label>
+            </div>
+            <div class="work">
+                <img class="icon" src="image/location.png" alt="">
+                <label for="">Nearby</label>
+            </div>
+        </nav>
+
+    </main>
+    <script>
+        function onClickMenu()
+        {
+            document.getElementById( "menu" ).classList.toggle( "icon" );
+            document.getElementById( "nav" ).classList.toggle( "change" );
+        }
+    </script>
+</body>
+
+</html>
