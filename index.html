@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bahianita&display=swap" rel="stylesheet">
     <title>codeRed.com</title>
     <style>
-        @media only screen and (max-width:430px) {
+        @media only screen and (max-width:500px) {
+
+            /* pure body pe apply hoga */
             body {
                 margin: 0;
                 padding: 0;
@@ -18,55 +20,87 @@
                 background-color: white;
             }
 
+            /* navigation bar wala part */
             #navigation {
-                /* border: 2px solid red; */
-                position: fixed;
-                top: 0px;
                 display: flex;
                 width: 100%;
-                box-shadow: -4px 2px 12px 2px grey;
             }
 
-            .search-bar-div {
-                /* border: 2px solid orange; */
+            /* upper navigation bar */
+            .heading {
                 width: 100%;
-                /* height: 100%; */
+                display: flex;
+            }
+
+            /* three dot wala part */
+            .t-dot {
+                width: 12%;
+            }
+
+            .t-dot div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+            }
+
+            /* organisation ka logo */
+            .logo {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                width: 85%;
+            }
+
+            .logo img {
+                border: 2px solid black;
+                border-radius: 30px;
+                width: 40px;
+                height: 40px;
+                z-index: -101;
+            }
+
+            /* search bar */
+            .search-bar-div {
+                width: 100%;
+                height: 55px;
                 display: flex;
 
             }
 
             #search-bar {
-                /* border: 2px solid rgb(116, 92, 49); */
                 border: none;
-                /* height: 100%; */
                 background: none;
-                width: 73%;
+                margin-left: 60px;
+                width: 65%;
                 text-align: center;
-                /* padding: 0 52px 0 52px; */
                 font-family: 'Bahianita', cursive;
+                z-index: -101;
+
             }
 
             .search {
                 text-align: center;
                 display: flex;
                 align-items: center;
-                justify-content: right;
-                width: 12%;
+                justify-content: left;
+                width: 9%;
+                height: 32px;
                 position: absolute;
                 right: 0px;
-                top: 0px;
-                /* height: 30px; */
-                /* border: 2px dotted red; */
+                z-index: -101;
                 padding: 11px 3px 9px 10px;
             }
 
+            /* Hamburger wala part */
             #menu {
                 width: 35px;
                 height: 30px;
                 padding: 18px 10px 3px 10px;
                 cursor: pointer;
                 z-index: 100;
-                /* border: 2px solid black; */
             }
 
             .bar {
@@ -87,27 +121,23 @@
             }
 
             .nav {
-                /* border: 2px solid black; */
                 padding: 0;
                 margin: 0 20px;
                 transition: 1s ease;
                 display: none;
                 text-align: center;
-                /* display: flex; */
                 align-items: center;
                 justify-content: center;
             }
 
+            /* side scrolling bar */
             .profile {
                 margin: 0;
                 padding-top: 15px;
-                /* border: 2px solid red; */
                 width: 100%;
                 height: 30%;
                 display: flex;
                 flex-direction: column;
-                /* position: absolute;
-                top: 0; */
             }
 
             #profile {
@@ -115,37 +145,29 @@
                 background: url(image/readingc.jpg);
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
-                /* background-color: ; */
             }
 
             #options {
                 background-color: green;
                 height: 45%;
                 font-size: 15px;
-                /* border: 2px solid yellow; */
             }
 
             .contact {
                 background-color: green;
                 height: 20%;
-                /* border: 2px solid red; */
                 width: 100%;
 
             }
 
             .contact #phone {
-                /* border: 2px dotted rebeccapurple; */
                 height: 16px;
                 font-size: 10px;
                 display: flex;
-                /* color: white; */
                 text-align: center;
-                /* margin: 0px 10px 0px 10px; */
-
             }
 
             .contact #email {
-                /* border: 2px dotted rgb(66, 46, 87); */
                 font-size: 10px;
                 height: 16px;
                 display: flex;
@@ -166,14 +188,12 @@
 
 
             .contact #about {
-                /* border: 2px dotted rebeccapurple; */
                 height: 29px;
             }
 
             #dp {
                 margin: 0;
                 padding: 0;
-                /* border: 2px solid blue; */
             }
 
             #dp img {
@@ -187,13 +207,10 @@
             #name {
                 margin: 0;
                 padding: 0;
-                /* height: 20px; */
-                /* border: 2px solid white; */
             }
 
             #name label {
                 color: white;
-                /* border: 2px solid rgb(153, 136, 136); */
                 font-size: 10px;
                 margin: 0%;
                 margin: 0;
@@ -201,7 +218,6 @@
             }
 
             #status {
-                /* border: 2px solid yellow; */
                 height: 100%;
                 font-size: 10px;
                 display: flex;
@@ -218,13 +234,11 @@
             }
 
             #status div h3 {
-                /* border: 2px solid skyblue; */
                 margin: 0;
             }
 
             #status div label {
                 /* border: 2px solid skyblue; */
-
             }
 
             .nav li a {
@@ -258,8 +272,6 @@
             }
 
             .change {
-                /* border: 2px solid black; */
-                /* background-color: green; */
                 height: 100vh;
                 margin: 0;
                 position: absolute;
@@ -270,7 +282,6 @@
                 display: flex;
                 flex-direction: column;
                 animation: ;
-
             }
 
             /* plus icon section */
@@ -280,6 +291,7 @@
                 position: fixed;
                 bottom: 63px;
                 right: 15px;
+                z-index: 100;
                 display: flex;
                 justify-content: center;
                 background-color: green;
@@ -299,20 +311,17 @@
                 display: flex;
                 width: 100%;
                 background-color: green;
-                /* border: 2px solid black; */
                 height: 50px;
-                /* box-shadow: 4px -12px -12px -12px grey; */
+                z-index: -101;
             }
 
             .work {
-                /* border: 2px solid orange; */
                 width: 33%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                /* padding: 9px; */
                 background-color: green;
             }
 
@@ -332,9 +341,7 @@
 
 <body>
     <main class="main">
-
         <nav id="navigation">
-            <!-- <div class="logo"><img src="image/logo.jpeg" alt=""></div> -->
             <div id="menu" onclick="onClickMenu()">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
@@ -342,7 +349,6 @@
             </div>
             <ul class="nav" id="nav">
                 <div class="profile" id="profile">
-
                     <div id="dp"><img src="image/dp.jpg" alt=""></div>
                     <div id="name"><label for="">Sufyan Ahmad Ansari</label></div>
                     <div id="status">
@@ -355,11 +361,9 @@
                         <div>
                             <h3>403</h3><label for="">Question Solved</label>
                         </div>
-
                     </div>
                 </div>
                 <div class="profile" id="options">
-
                     <li><a href="">Classes</a></li>
                     <li><a href="">Notifications</a></li>
                     <li><a href="">Settings</a></li>
@@ -378,14 +382,23 @@
                     <div class="message" id="about"></div>
                 </div>
             </ul>
-            <div class="search-bar-div">
-                <input type="text" name="" id="search-bar" placeholder="Search">
-                <div class="search">
-                    <img src="image/search1x.png" alt="">
+            <div class="heading">
+                <div class="logo">
+                    <img src="image/logo.jpeg" alt="">
                 </div>
-
+                <div class="t-dot">
+                    <div>
+                        ...
+                    </div>
+                </div>
             </div>
         </nav>
+        <div class="search-bar-div">
+            <input type="text" name="" id="search-bar" placeholder="Search">
+            <div class="search">
+                <img src="image/search1x.png" alt="">
+            </div>
+        </div>
         <nav id="plus-icon">
             <img src="image/plusw1x.png" alt="">
         </nav>
