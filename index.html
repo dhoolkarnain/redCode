@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bahianita&display=swap" rel="stylesheet">
     <title>codeRed.com</title>
     <style>
-        @media only screen and (max-width:430px) {
+        @media only screen and (max-width:500px) {
+
+            /* pure body pe apply hoga */
             body {
                 margin: 0;
                 padding: 0;
@@ -18,61 +20,98 @@
                 background-color: white;
             }
 
+            /* navigation bar wala part */
             #navigation {
-                /* border: 2px solid red; */
-                position: fixed;
-                top: 0px;
+                background-color: white;
                 display: flex;
                 width: 100%;
-                box-shadow: -4px 2px 12px 2px grey;
+                z-index: 100;
+                position: sticky;
+                top: 0px;
+                /* box-shadow: 2px 2px 12px 2px grey; */
             }
 
-            .search-bar-div {
-                /* border: 2px solid orange; */
+            /* upper navigation bar */
+            .heading {
                 width: 100%;
-                /* height: 100%; */
+                display: flex;
+            }
+
+            /* three dot wala part */
+            .t-dot {
+                width: 12%;
+            }
+
+            .t-dot div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+            }
+
+            /* organisation ka logo */
+            .logo {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                width: 85%;
+            }
+
+            .logo img {
+                border: 2px solid black;
+                border-radius: 30px;
+                width: 40px;
+                height: 40px;
+                z-index: -101;
+            }
+
+            /* search bar */
+            .search-bar-div {
+                width: 100%;
+                height: 55px;
                 display: flex;
 
             }
 
             #search-bar {
-                /* border: 2px solid rgb(116, 92, 49); */
                 border: none;
-                /* height: 100%; */
                 background: none;
-                width: 73%;
+                margin-left: 60px;
+                width: 65%;
                 text-align: center;
-                /* padding: 0 52px 0 52px; */
                 font-family: 'Bahianita', cursive;
+                z-index: -101;
+
             }
 
             .search {
                 text-align: center;
                 display: flex;
                 align-items: center;
-                justify-content: right;
-                width: 12%;
+                justify-content: left;
+                width: 9%;
+                height: 32px;
                 position: absolute;
                 right: 0px;
-                top: 0px;
-                /* height: 30px; */
-                /* border: 2px dotted red; */
+                z-index: -101;
                 padding: 11px 3px 9px 10px;
             }
 
+            /* Hamburger wala part */
             #menu {
                 width: 35px;
                 height: 30px;
                 padding: 18px 10px 3px 10px;
                 cursor: pointer;
                 z-index: 100;
-                /* border: 2px solid black; */
             }
 
             .bar {
                 height: 5px;
                 width: 100%;
-                background-color: green;
+                background-color: rgb(56, 3, 3);
                 display: block;
                 border-radius: 5px;
                 transition: 0.3s ease;
@@ -87,27 +126,23 @@
             }
 
             .nav {
-                /* border: 2px solid black; */
                 padding: 0;
                 margin: 0 20px;
                 transition: 1s ease;
                 display: none;
                 text-align: center;
-                /* display: flex; */
                 align-items: center;
                 justify-content: center;
             }
 
+            /* side scrolling bar */
             .profile {
                 margin: 0;
                 padding-top: 15px;
-                /* border: 2px solid red; */
                 width: 100%;
                 height: 30%;
                 display: flex;
                 flex-direction: column;
-                /* position: absolute;
-                top: 0; */
             }
 
             #profile {
@@ -115,37 +150,30 @@
                 background: url(image/readingc.jpg);
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
-                /* background-color: ; */
+                /* opacity: 0.5; */
             }
 
             #options {
-                background-color: green;
+                background-color: rgb(56, 3, 3);
                 height: 45%;
                 font-size: 15px;
-                /* border: 2px solid yellow; */
             }
 
             .contact {
-                background-color: green;
+                background-color: rgb(56, 3, 3);
                 height: 20%;
-                /* border: 2px solid red; */
                 width: 100%;
 
             }
 
             .contact #phone {
-                /* border: 2px dotted rebeccapurple; */
                 height: 16px;
                 font-size: 10px;
                 display: flex;
-                /* color: white; */
                 text-align: center;
-                /* margin: 0px 10px 0px 10px; */
-
             }
 
             .contact #email {
-                /* border: 2px dotted rgb(66, 46, 87); */
                 font-size: 10px;
                 height: 16px;
                 display: flex;
@@ -166,14 +194,12 @@
 
 
             .contact #about {
-                /* border: 2px dotted rebeccapurple; */
                 height: 29px;
             }
 
             #dp {
                 margin: 0;
                 padding: 0;
-                /* border: 2px solid blue; */
             }
 
             #dp img {
@@ -187,21 +213,18 @@
             #name {
                 margin: 0;
                 padding: 0;
-                /* height: 20px; */
-                /* border: 2px solid white; */
             }
 
             #name label {
-                color: white;
-                /* border: 2px solid rgb(153, 136, 136); */
-                font-size: 10px;
+                color: rgb(56, 3, 3);
+                font-size: 25px;
                 margin: 0%;
                 margin: 0;
+
 
             }
 
             #status {
-                /* border: 2px solid yellow; */
                 height: 100%;
                 font-size: 10px;
                 display: flex;
@@ -218,13 +241,15 @@
             }
 
             #status div h3 {
-                /* border: 2px solid skyblue; */
                 margin: 0;
             }
 
             #status div label {
                 /* border: 2px solid skyblue; */
+            }
 
+            #nav {
+                background-color: rgb(56, 3, 3);
             }
 
             .nav li a {
@@ -233,7 +258,7 @@
             }
 
             .nav li a:hover {
-                color: rgb(90, 231, 90);
+                color: white;
             }
 
             .nav li {
@@ -258,8 +283,6 @@
             }
 
             .change {
-                /* border: 2px solid black; */
-                /* background-color: green; */
                 height: 100vh;
                 margin: 0;
                 position: absolute;
@@ -270,20 +293,154 @@
                 display: flex;
                 flex-direction: column;
                 animation: ;
+            }
+
+            /* main section jisme sab chiz hoga */
+            .main {
+                /* height: 1000px; */
+                /* border: 2px solid rgb(112, 6, 6); */
+            }
+
+            /* subject section */
+            #subject-section {
+                position: absolute;
+                top: 100px;
+                margin: 23px;
+                /* padding-bottom: 50px; */
+                /* z-index: -105; */
+                height: auto;
+                display: none;
+                flex-direction: column;
+                /* border: 2px solid green; */
+                z-index: -100;
+
+            }
+
+            .sub {
+                /* border: 2px solid green; */
+                background-color: rgb(56, 3, 3);
+                color: white;
+                margin: 5px;
+                border-radius: 5px;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                text-align: justify;
+                align-items: center;
+            }
+
+            .sub h1 {
+                /* border: 2px solid white; */
+                margin-bottom: 0;
+            }
+
+            .sub p {
+                /* border: 2px solid white; */
+                margin-top: 0;
+                /* margin: 10px; */
+            }
+
+            /* classwork wala part */
+            #classwork-section {
+                position: absolute;
+                top: 100px;
+                width: 100%;
+                /* margin: 30px; */
+                /* padding-bottom: 50px; */
+                /* z-index: -105; */
+                height: 1000px;
+                display: none;
+                flex-direction: column;
+                /* border: 2px solid green; */
+                z-index: -100;
+
+            }
+
+            .class {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                border: 2px solid rgb(56, 3, 3);
+                margin: 23px;
+                height: 100px;
+                border-radius: 7px;
+            }
+
+            /* teacher wala hissa */
+            #teachers-section {
+                /* border: 2px solid green; */
+                display: none;
+                position: absolute;
+                top: 100px;
+            }
+
+            .staff {
+                display: flex;
+                /* border: 2px solid green; */
+                margin: 5px;
+            }
+
+            .staff .teacher-dp {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+
+            .staff .teacher-dp img {
+                /* border: 2px solid green; */
+                border-radius: 30px;
+                width: 50px;
+                height: 50px;
+            }
+
+            .teachers-profile {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .teacher-name {
+                /* border: 2px solid green; */
+                font-size: 15px;
+                padding: 0px;
+                height: 15px;
+                display: flex;
+                align-items: center;
+            }
+
+            .teacher-tag {
+                /* border: 2px solid green; */
+                font-size: 12px;
+                height: 10px;
+                color: grey;
+                display: flex;
+                align-items: center;
+            }
+
+            .teacher-description {
+                /* border: 2px solid green; */
+                color: grey;
 
             }
 
             /* plus icon section */
             #plus-icon {
-                border: 2px solid green;
+                /* border: 2px solid green; */
                 border-radius: 100px;
                 position: fixed;
                 bottom: 63px;
                 right: 15px;
+                z-index: 100;
                 display: flex;
                 justify-content: center;
-                background-color: green;
-                box-shadow: 2px 2px 12px 2px grey;
+                background-color: rgb(56, 3, 3);
+                box-shadow: 0px 0px 27px 2px grey;
                 padding: 10px;
 
                 /* z-index: -101; */
@@ -298,22 +455,20 @@
                 bottom: 0px;
                 display: flex;
                 width: 100%;
-                background-color: green;
-                /* border: 2px solid black; */
+                background-color: rgb(56, 3, 3);
                 height: 50px;
-                /* box-shadow: 4px -12px -12px -12px grey; */
+                z-index: 101;
             }
 
+
             .work {
-                /* border: 2px solid orange; */
                 width: 33%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                /* padding: 9px; */
-                background-color: green;
+                background-color: rgb(56, 3, 3);
             }
 
             .work img {
@@ -326,15 +481,230 @@
                 font-size: smaller;
             }
 
+            /* home page wala section */
+            #home {
+                /* border: 2px solid green; */
+                /* border-radius: 15px; */
+                height: 50vh;
+                display: flex;
+                margin: 25px 0px;
+                /* box-shadow: 0px 2px 40px 2px green; */
+
+
+                /* justify-content: ; */
+            }
+
+            #home .homeRight {
+                width: 50%;
+                /* border: 2px solid green; */
+                background-image: url('image/homeRight.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            #home .homeLeft {
+                width: 50%;
+                /* border: 2px solid green; */
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #home .homeLeft div {
+                /* width: 50%; */
+                width: 100%;
+                height: 50%;
+                /* border: 2px solid green; */
+
+                /* align-items: center; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* justify-content: center; */
+            }
+
+            .button1 {
+                /* width: 50%; */
+                height: 20%;
+                width: 30%;
+                border: 2px solid green;
+
+                /* align-items: center; */
+                display: flex;
+                /* justify-content: center; */
+            }
+
+            .button2 {
+                color: rgb(56, 3, 3);
+                /* width: 50%; */
+                margin: ;
+                height: 20%;
+                width: 30%;
+                border: 2px solid rgb(56, 3, 3);
+
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+            }
+
+            #home h1 {
+                display: flex;
+                color: rgb(56, 3, 3);
+            }
+
+            /* footer wala part */
+            #footer {
+                /* height: 500px; */
+                /* border: 2px solid green; */
+                background-color: rgb(20, 18, 18);
+                /* color: white; */
+            }
+
+            .foot {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+                /* border: 2px solid green; */
+                margin-bottom: 45px;
+                /* display: grid; */
+                margin-right: 15px;
+                margin-left: 15px;
+
+                /* grid-template-columns: 1fr 1fr; */
+            }
+
+            #site-link {
+                margin-top: 0;
+                /* border: 2px solid blue; */
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                /* justify-content: center; */
+                /* align-items: center; */
+                /* text-align: center; */
+            }
+
+            .site-link-upper {
+                /* border: 2px solid fuchsia; */
+                width: 100%;
+                /* height: 10%; */
+
+            }
+
+            .site-link-lower {
+                /* border: 2px solid khaki; */
+                /* height: 80%; */
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            .site-link-left {
+                width: 100%;
+                height: 100%;
+                /* border: 2px solid red; */
+            }
+
+            .site-link-left li {
+                list-style: none;
+            }
+
+            .site-link-left li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .site-link-middle {
+                /* border: 2px solid red; */
+                height: 100%;
+                width: 100%;
+            }
+
+            .site-link-middle li {
+                list-style: none;
+            }
+
+            .site-link-middle li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .site-link-right {
+                /* border: 2px solid red; */
+                height: 100%;
+                width: 100%;
+            }
+
+            .site-link-right li {
+                list-style: none;
+            }
+
+            .site-link-right li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            #social {
+                width: 100%;
+                /* border: 2px solid red; */
+                display: flex;
+                margin-top: 10px;
+                align-items: center;
+                flex-direction: row;
+            }
+
+            .social-logo {
+                width: 100%;
+                color: white;
+                font-size: 20px;
+                /* border: 2px solid red; */
+                /* margin: 10px; */
+
+            }
+
+            .social-media {
+                width: 100%;
+                /* border: 2px solid red; */
+                display: flex;
+                flex-direction: row;
+                font-size: 10px;
+                /* margin: 10px; */
+                color: white;
+
+            }
+
+            .social-media img {
+                background-color: white;
+            }
+
+            .social-notification {
+                width: 100%;
+                /* border: 2px solid red; */
+                /* margin: 10px; */
+            }
+
+            #privacy {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                /* border: 2px solid red; */
+                color: white;
+            }
+
+
         }
     </style>
 </head>
 
 <body>
     <main class="main">
-
         <nav id="navigation">
-            <!-- <div class="logo"><img src="image/logo.jpeg" alt=""></div> -->
             <div id="menu" onclick="onClickMenu()">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
@@ -342,7 +712,6 @@
             </div>
             <ul class="nav" id="nav">
                 <div class="profile" id="profile">
-
                     <div id="dp"><img src="image/dp.jpg" alt=""></div>
                     <div id="name"><label for="">Sufyan Ahmad Ansari</label></div>
                     <div id="status">
@@ -355,11 +724,9 @@
                         <div>
                             <h3>403</h3><label for="">Question Solved</label>
                         </div>
-
                     </div>
                 </div>
                 <div class="profile" id="options">
-
                     <li><a href="">Classes</a></li>
                     <li><a href="">Notifications</a></li>
                     <li><a href="">Settings</a></li>
@@ -378,31 +745,555 @@
                     <div class="message" id="about"></div>
                 </div>
             </ul>
-            <div class="search-bar-div">
-                <input type="text" name="" id="search-bar" placeholder="Search">
-                <div class="search">
-                    <img src="image/search1x.png" alt="">
+            <div class="heading">
+                <div class="logo">
+                    <!-- <img src="image/logo.jpeg" alt=""> -->
+                    <h1>codeRed</h1>
                 </div>
-
+                <div class="t-dot">
+                    <div>
+                        ...
+                    </div>
+                </div>
             </div>
         </nav>
+        <div class="search-bar-div">
+            <input type="text" name="" id="search-bar" placeholder="Search">
+            <div class="search">
+                <img src="image/search1x.png" alt="">
+            </div>
+        </div>
+        <section id="home">
+            <div class="homeRight">
+
+            </div>
+            <div class="homeLeft">
+                <h1>c o d e R e d</h1>
+                <div>
+                    <!-- <section class="button1"></section> -->
+                    <section class="button2">Sign Up</section>
+                </div>
+            </div>
+
+        </section>
+        <section id="subject-section">
+            <div class="sub">
+                <h1>Physics</h1>
+                <p>The chief philosophical value of physics is that it gives the mind something distinct to lay hold of,
+                    which, if you don’t, Nature at once tells you you are wrong. A cylinder of air reaching to the top
+                    of the atmosphere is of equal weight with a cylinder of water about 33 feet high.</p>
+            </div>
+            <div class="sub">
+                <h1>Mathematics</h1>
+                <p>Professional mathematicians think a certain way to solve real problems, problems that can arise from
+                    the everyday world, or from science, or from within mathematics itself. The key to success in school
+                    math is to learn to think inside-the-box.</p>
+            </div>
+            <div class="sub">
+                <h1>English</h1>
+                <p>Two teachers were assigned to teach the groups but one of them was told that his group was selected
+                    from the ‘clever’ students, while the other teacher was informed that the students he was going to
+                    work with were ‘slow learners’.</p>
+            </div>
+            <div class="sub">
+                <h1>Chemistry</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo unde delectus officiis incidunt
+                    consequatur libero modi ipsa esse asperiores, consequuntur tenetur laborum nulla laudantium iusto,
+                    molestiae et excepturi. Maiores deleniti animi cum possimus quibusdam sapiente a!</p>
+            </div>
+            <div class="sub">
+                <h1>Biology</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, labore facere. Provident amet sunt
+                    velit, nam fugit quaerat modi, dicta in consequuntur beatae, vel aliquid ipsam reiciendis id ratione
+                    ullam non assumenda tenetur corporis ipsum sed.</p>
+            </div>
+            <div class="sub">
+                <h1>Economics</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, ipsum totam aliquid itaque quibusdam
+                    soluta minima voluptatibus delectus fuga eveniet vitae cum, perferendis fugit odio autem recusandae
+                    deserunt iste voluptas ea laboriosam non! Dolorem, nostrum voluptatum.</p>
+            </div>
+            <div class="sub">
+                <h1>Sociology</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aspernatur ducimus quasi ea dolores
+                    impedit tempore. Hic quos aspernatur reiciendis repellat adipisci dicta, ipsum esse dolorem rem nemo
+                    perferendis similique, nisi inventore, dolores molestias iusto qui!</p>
+            </div>
+            <div class="sub">
+                <h1>Geography</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga tenetur vel pariatur quidem eveniet
+                    eum nostrum, nisi suscipit ea saepe aspernatur neque a nobis impedit amet totam alias illo, natus
+                    quam explicabo? Veniam mollitia reiciendis quaerat?</p>
+            </div>
+            <div class="sub">
+                <h1>History</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero cum explicabo magnam ad quos. A
+                    nisi, vel, aut quo sit veniam commodi veritatis praesentium expedita eos, sint libero error
+                    assumenda totam voluptas reiciendis explicabo iure amet!</p>
+            </div>
+
+
+        </section>
+        <section id="classwork-section">
+            <div class="class">Assignment 1</div>
+            <div class="class">Assignment 2</div>
+            <div class="class">Assignment 3</div>
+            <div class="class">Assignment 4</div>
+            <div class="class">Assignment 5</div>
+
+        </section>
+        <section id="teachers-section">
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="teacher-dp">
+                    <img src="image/dp.jpg" alt="">
+
+                </div>
+                <div class="teachers-profile">
+                    <div class="teacher-name">
+                        <label for="">Sufyan Ahmad Ansari</label>
+                        <img src="" alt="">
+                    </div>
+                    <div class="teacher-tag">
+                        senior staff
+                    </div>
+                    <div class="teacher-description">
+                        A young , motivational lecturer
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- plus icon -->
         <nav id="plus-icon">
             <img src="image/plusw1x.png" alt="">
         </nav>
+        <!-- bottom navigation bar -->
         <nav id="bottom-navigation">
-            <div class="work">
+            <div class="work" id="subject" onclick="subject()">
                 <img class="icon" src="image/subject.png" alt="">
                 <label for="">Subject</label>
             </div>
-            <div class="work">
+            <div class="work" id="classwork" onclick="classwork()">
                 <img class="icon" src="image/classwork.png" alt="">
                 <label for="">classWork</label>
             </div>
-            <div class="work">
+            <div class="work" id="teachers" onclick="teachers()">
                 <img class="icon" src="image/teachers.png" alt="">
                 <label for="">Teachers</label>
             </div>
         </nav>
+        <footer id="footer">
+            <div class="foot">
+                <div id="site-link">
+                    <div class="site-link-upper">
+                        <p>OXFORD CLASSES</p>
+                    </div>
+                    <div class="site-link-lower">
+                        <div class="site-link-left">
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Directions</a></li>
+                            <li><a href="">Blog</a></li>
+                        </div>
+                        <div class="site-link-middle">
+                            <li><a href="">Promotions</a></li>
+                            <li><a href="">Partners</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">FAQs</a></li>
+
+                        </div>
+                        <div class="site-link-right">
+                            <li><a href="">Wallpaper</a></li>
+                            <li><a href="">Village</a></li>
+                            <li><a href="">Responsible</a></li>
+                            <li><a href="">Media</a></li>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="social">
+
+                    <div class="social-logo">
+                        <p>codeRed</p>
+                    </div>
+                    <div class="social-media">
+                        <label for="">Follow Us</label>
+                        <div class="social"> <a href="#">f</a> </div>
+                        <div class="social"> <a href="#">You<span>Tube</span></a> </div>
+                        <div class="social"> <a href="#">t</a> </div>
+                        <div class="social"> <a href="#"></a> </div>
+                    </div>
+                    <div class="social-notification">
+
+                    </div>
+                </div>
+                <div id="privacy">
+                    <p>Copyright &copy 2021 </p>
+                </div>
+            </div>
+        </footer>
 
     </main>
     <script>
@@ -410,6 +1301,33 @@
         {
             document.getElementById( "menu" ).classList.toggle( "icon" );
             document.getElementById( "nav" ).classList.toggle( "change" );
+        }
+        function subject()
+        {
+            document.getElementById( "subject-section" ).style.display = "block";
+            document.getElementById( "home" ).style.display = "none";
+            document.getElementById( "footer" ).style.display = "none";
+            document.getElementById( "classwork-section" ).style.display = "none";
+            document.getElementById( "teachers-section" ).style.display = "none";
+            // document.getElementById( "footer" ).style.display = "block";
+        }
+        function classwork()
+        {
+            document.getElementById( "classwork-section" ).style.display = "block";
+            document.getElementById( "home" ).style.display = "none";
+            document.getElementById( "footer" ).style.display = "none";
+            document.getElementById( "subject-section" ).style.display = "none";
+            document.getElementById( "teachers-section" ).style.display = "none";
+            // document.getElementById( "footer" ).style.display = "block";
+        }
+        function teachers()
+        {
+            document.getElementById( "teachers-section" ).style.display = "block";
+            document.getElementById( "home" ).style.display = "none";
+            document.getElementById( "footer" ).style.display = "none";
+            document.getElementById( "classwork-section" ).style.display = "none";
+            document.getElementById( "subject-section" ).style.display = "none";
+            // document.getElementById( "footer" ).style.display = "block";
         }
     </script>
 </body>
