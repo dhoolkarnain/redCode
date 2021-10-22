@@ -59,14 +59,15 @@
                 width: 85%;
             }
 
-            .logo img {
-                border: 2px solid black;
-                border-radius: 30px;
-                width: 40px;
-                height: 40px;
+            .logo h1 {
+                color: rgb(56, 3, 3);
+                /* border: 2px solid rgb(116, 54, 54); */
+                /* border-radius: 30px; */
+                /* width: 40px; */
+                /* height: 40px; */
                 z-index: -101;
-                display: flex;
-                width: 100%;
+                /* display: flex; */
+                /* width: 100%; */
             }
 
 
@@ -109,32 +110,54 @@
 
             /* search bar */
             .search-bar-div {
-                width: 100%;
-                height: 55px;
+
                 display: flex;
+                justify-content: center;
+                align-items: center;
+                /* border: 2px solid red; */
+            }
+
+            .search-div {
+                /* border: 2px solid red; */
+                border: 2px solid rgb(56, 3, 3);
+                display: flex;
+                width: 60%;
+                height: 35px;
+                /* margin-left: 70px; */
+                /* margin-top: 18px; */
+                /* margin-bottom: 18px; */
+                border-radius: 50px;
 
             }
 
             #search-bar {
                 border: none;
                 background: none;
-                margin-left: 60px;
-                width: 65%;
+                /* margin-left: 70px; */
+                width: 100%;
                 text-align: center;
                 font-family: 'Bahianita', cursive;
                 z-index: -101;
+                /* margin-top: 8px; */
+                /* margin-bottom: 8px; */
+
 
             }
 
+
             .search {
+                border-radius: 50px;
+                /* margin-top: 8px; */
+                /* margin-bottom: 8px; */
+                /* border: 2px solid rgb(56, 3, 3); */
                 text-align: center;
                 display: flex;
                 align-items: center;
                 justify-content: left;
-                width: 9%;
-                height: 32px;
-                position: absolute;
-                right: 0px;
+                /* width: 9px; */
+                /* height: 32px; */
+                /* position: absolute; */
+                /* right: 0px; */
                 z-index: -101;
                 padding: 11px 3px 9px 10px;
             }
@@ -334,7 +357,7 @@
                 position: absolute;
                 font-size: 30px;
                 top: 0;
-                z-index: -100;
+                z-index: -101;
                 width: 80%;
                 display: flex;
                 flex-direction: column;
@@ -425,6 +448,7 @@
 
             /* teacher wala hissa */
             #teachers-section {
+                margin-top: 20px;
                 /* border: 2px solid green; */
                 display: none;
                 /* position: absolute; */
@@ -555,7 +579,7 @@
             #home .homeRight {
                 width: 50%;
                 /* border: 2px solid green; */
-                background-image: url('image/homeRight.jpg');
+                /* background-image: url('image/homeRight.jpg'); */
                 background-size: 100%;
                 background-repeat: no-repeat;
             }
@@ -739,6 +763,54 @@
 
             }
 
+            .social-media label {
+                /* border: 2px solid white; */
+                display: flex;
+                align-items: center;
+                padding-right: 15px;
+
+            }
+
+            .social {
+                padding: 3px;
+                /* border: 2px solid white; */
+            }
+
+
+            .social a {
+                font-weight: 900;
+                color: white;
+                text-decoration: none;
+
+            }
+
+            #facebook {
+                /* border: 2px solid white; */
+                border-radius: 10px;
+                background-color: blue;
+                /* padding: 3px; */
+                color: white;
+            }
+
+            #twitter a {
+                color: rgb(0, 225, 255);
+            }
+
+            #instagram a {
+                border: ;
+                /* border: 2px solid white; */
+            }
+
+            .social-media div a span {
+                /* border: 2px solid white; */
+                border-radius: 6px;
+                background-color: red;
+                padding: 1px;
+
+                color: white;
+
+            }
+
             .social-media img {
                 background-color: white;
             }
@@ -822,9 +894,12 @@
             </div>
         </nav>
         <div class="search-bar-div">
-            <input type="text" name="" id="search-bar" placeholder="Search">
-            <div class="search">
-                <img src="image/search1x.png" alt="">
+            <div class="search-div">
+
+                <input type="text" name="" id="search-bar" placeholder="Search">
+                <div class="search">
+                    <img src="image/search1x.png" alt="">
+                </div>
             </div>
         </div>
         <section id="home">
@@ -923,6 +998,7 @@
                 <div class="class">Assignment 5</div>
 
             </section>
+            <!-- teacher wala section -->
             <section id="teachers-section">
                 <div class="staff">
                     <div class="teacher-dp">
@@ -1329,7 +1405,7 @@
             <div class="foot">
                 <div id="site-link">
                     <div class="site-link-upper">
-                        <p>OXFORD CLASSES</p>
+                        <p>codeRed</p>
                     </div>
                     <div class="site-link-lower">
                         <div class="site-link-left">
@@ -1361,10 +1437,10 @@
                     </div>
                     <div class="social-media">
                         <label for="">Follow Us</label>
-                        <div class="social"> <a href="#">f</a> </div>
-                        <div class="social"> <a href="#">You<span>Tube</span></a> </div>
-                        <div class="social"> <a href="#">t</a> </div>
-                        <div class="social"> <a href="#"></a> </div>
+                        <div class="social" id="facebook"> <a href="#">f</a> </div>
+                        <div class="social" id="youtube"> <a href="#">You<span>Tube</span></a> </div>
+                        <div class="social" id="twitter"> <a href="#">t</a> </div>
+                        <div class="social" id="instagram"> <a href="#">in</a> </div>
                     </div>
                     <div class="social-notification">
 
