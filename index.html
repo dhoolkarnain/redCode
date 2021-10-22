@@ -65,6 +65,46 @@
                 width: 40px;
                 height: 40px;
                 z-index: -101;
+                display: flex;
+                width: 100%;
+            }
+
+
+
+            /* upper navigation bar */
+            .heading {
+                width: 100%;
+                display: flex;
+            }
+
+            /* three dot wala part */
+            .t-dot {
+                width: 12%;
+            }
+
+            .t-dot div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+            }
+
+            /* organisation ka logo */
+            .logo {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                width: 85%;
+            }
+
+            .logo img {
+                border: 2px solid black;
+                border-radius: 30px;
+                width: 40px;
+                height: 40px;
+                z-index: -101;
             }
 
             /* search bar */
@@ -150,7 +190,9 @@
                 background: url(image/readingc.jpg);
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
+
                 /* opacity: 0.5; */
+
             }
 
             #options {
@@ -216,8 +258,10 @@
             }
 
             #name label {
-                color: rgb(56, 3, 3);
+                /* color: rgb(56, 3, 3); */
                 font-size: 25px;
+                color: white;
+                font-size: 10px;
                 margin: 0%;
                 margin: 0;
 
@@ -246,10 +290,12 @@
 
             #status div label {
                 /* border: 2px solid skyblue; */
+
             }
 
             #nav {
                 background-color: rgb(56, 3, 3);
+
             }
 
             .nav li a {
@@ -292,7 +338,8 @@
                 width: 80%;
                 display: flex;
                 flex-direction: column;
-                animation: ;
+
+
             }
 
             /* main section jisme sab chiz hoga */
@@ -426,7 +473,6 @@
             .teacher-description {
                 /* border: 2px solid green; */
                 color: grey;
-
             }
 
             /* plus icon section */
@@ -458,6 +504,10 @@
                 background-color: rgb(56, 3, 3);
                 height: 50px;
                 z-index: 101;
+                /* background-color: green; */
+                height: 50px;
+                /* z-index: -101; */
+
             }
 
 
@@ -469,6 +519,8 @@
                 align-items: center;
                 text-align: center;
                 background-color: rgb(56, 3, 3);
+                /* background-color: green; */
+
             }
 
             .work img {
@@ -749,6 +801,9 @@
                 <div class="logo">
                     <!-- <img src="image/logo.jpeg" alt=""> -->
                     <h1>codeRed</h1>
+
+                    <!-- <img src="image/logo.jpeg" alt=""> -->
+
                 </div>
                 <div class="t-dot">
                     <div>
@@ -779,50 +834,65 @@
         <section id="subject-section">
             <div class="sub">
                 <h1>Physics</h1>
-                <p>The chief philosophical value of physics is that it gives the mind something distinct to lay hold of,
-                    which, if you don’t, Nature at once tells you you are wrong. A cylinder of air reaching to the top
+                <p>The chief philosophical value of physics is that it gives the mind something distinct to lay hold
+                    of,
+                    which, if you don’t, Nature at once tells you you are wrong. A cylinder of air reaching to the
+                    top
                     of the atmosphere is of equal weight with a cylinder of water about 33 feet high.</p>
             </div>
             <div class="sub">
                 <h1>Mathematics</h1>
-                <p>Professional mathematicians think a certain way to solve real problems, problems that can arise from
-                    the everyday world, or from science, or from within mathematics itself. The key to success in school
+                <p>Professional mathematicians think a certain way to solve real problems, problems that can arise
+                    from
+                    the everyday world, or from science, or from within mathematics itself. The key to success in
+                    school
                     math is to learn to think inside-the-box.</p>
             </div>
             <div class="sub">
                 <h1>English</h1>
-                <p>Two teachers were assigned to teach the groups but one of them was told that his group was selected
-                    from the ‘clever’ students, while the other teacher was informed that the students he was going to
+                <p>Two teachers were assigned to teach the groups but one of them was told that his group was
+                    selected
+                    from the ‘clever’ students, while the other teacher was informed that the students he was going
+                    to
                     work with were ‘slow learners’.</p>
             </div>
             <div class="sub">
                 <h1>Chemistry</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo unde delectus officiis incidunt
-                    consequatur libero modi ipsa esse asperiores, consequuntur tenetur laborum nulla laudantium iusto,
+                    consequatur libero modi ipsa esse asperiores, consequuntur tenetur laborum nulla laudantium
+                    iusto,
                     molestiae et excepturi. Maiores deleniti animi cum possimus quibusdam sapiente a!</p>
             </div>
             <div class="sub">
                 <h1>Biology</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, labore facere. Provident amet sunt
-                    velit, nam fugit quaerat modi, dicta in consequuntur beatae, vel aliquid ipsam reiciendis id ratione
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, labore facere. Provident amet
+                    sunt
+                    velit, nam fugit quaerat modi, dicta in consequuntur beatae, vel aliquid ipsam reiciendis id
+                    ratione
                     ullam non assumenda tenetur corporis ipsum sed.</p>
             </div>
             <div class="sub">
                 <h1>Economics</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, ipsum totam aliquid itaque quibusdam
-                    soluta minima voluptatibus delectus fuga eveniet vitae cum, perferendis fugit odio autem recusandae
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, ipsum totam aliquid itaque
+                    quibusdam
+                    soluta minima voluptatibus delectus fuga eveniet vitae cum, perferendis fugit odio autem
+                    recusandae
                     deserunt iste voluptas ea laboriosam non! Dolorem, nostrum voluptatum.</p>
             </div>
             <div class="sub">
                 <h1>Sociology</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aspernatur ducimus quasi ea dolores
-                    impedit tempore. Hic quos aspernatur reiciendis repellat adipisci dicta, ipsum esse dolorem rem nemo
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aspernatur ducimus quasi ea
+                    dolores
+                    impedit tempore. Hic quos aspernatur reiciendis repellat adipisci dicta, ipsum esse dolorem rem
+                    nemo
                     perferendis similique, nisi inventore, dolores molestias iusto qui!</p>
             </div>
             <div class="sub">
                 <h1>Geography</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga tenetur vel pariatur quidem eveniet
-                    eum nostrum, nisi suscipit ea saepe aspernatur neque a nobis impedit amet totam alias illo, natus
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga tenetur vel pariatur quidem
+                    eveniet
+                    eum nostrum, nisi suscipit ea saepe aspernatur neque a nobis impedit amet totam alias illo,
+                    natus
                     quam explicabo? Veniam mollitia reiciendis quaerat?</p>
             </div>
             <div class="sub">
@@ -1226,6 +1296,7 @@
         </section>
 
         <!-- plus icon -->
+
         <nav id="plus-icon">
             <img src="image/plusw1x.png" alt="">
         </nav>
