@@ -65,7 +65,7 @@
                 /* border-radius: 30px; */
                 /* width: 40px; */
                 /* height: 40px; */
-                z-index: -101;
+                z-index: -105;
                 /* display: flex; */
                 /* width: 100%; */
             }
@@ -533,7 +533,7 @@
                 width: 100%;
                 background-color: rgb(56, 3, 3);
                 height: 50px;
-                z-index: 101;
+                z-index: 90;
                 /* background-color: green; */
                 height: 50px;
                 /* z-index: -101; */
@@ -610,7 +610,8 @@
                 /* width: 50%; */
                 height: 20%;
                 width: 30%;
-                border: 2px solid green;
+                /* border: 2px solid green; */
+                border: 2px solid rgb(56, 3, 3);
 
                 /* align-items: center; */
                 display: flex;
@@ -620,7 +621,7 @@
             .button2 {
                 color: rgb(56, 3, 3);
                 /* width: 50%; */
-                margin: ;
+                margin: 3px;
                 height: 20%;
                 width: 30%;
                 border: 2px solid rgb(56, 3, 3);
@@ -830,6 +831,86 @@
                 color: white;
             }
 
+            /* login page */
+            #login-page {
+                position: absolute;
+                top: 0px;
+                /* border: 2px solid white; */
+                width: 100%;
+                height: 100%;
+                /* padding: auto; */
+                z-index: 105;
+                background-color: rgba(44, 4, 4, 0.7);
+                display: none;
+            }
+
+            .box {
+                /* border: 2px solid white; */
+                margin: 23px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 60%;
+                /* margin: auto; */
+                align-items: center;
+                /* padding: 30px; */
+                /* top: 50%; */
+                background: rgb(20, 18, 18);
+                /* left: 50%; */
+                transform: translate(-50%, -50);
+                text-align: center;
+            }
+
+            .box h1 {
+                /* border: 2px solid white; */
+                color: white;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 30px;
+                /* word-spacing: 30px; */
+            }
+
+            .box input[type="text"],
+            .box input[type="password"] {
+                /* border: 0; */
+
+                border: 2px solid white;
+                justify-content: center;
+                background: none;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                margin: 10px auto;
+                align-items: center;
+                /* border: 2px solid white; */
+                padding: 4px 6px;
+                width: 60%;
+                outline: none;
+                color: white;
+                border-radius: 20px;
+                transition: 0.25px;
+                /* cursor: pointer; */
+            }
+
+
+
+            .box input[type="submit"] {
+                /* border: 0; */
+                background: none;
+                display: flex;
+                margin: 23px auto;
+                align-items: center;
+                border: 2px solid white;
+                padding: 4px 55px;
+                /* border: 2px solid white; */
+                /* width: 220px; */
+                outline: none;
+                color: white;
+                border-radius: 10px;
+                transition: 0.25px;
+                cursor: pointer;
+            }
+
 
         }
     </style>
@@ -888,7 +969,7 @@
                 </div>
                 <div class="t-dot">
                     <div>
-                        ...
+
                     </div>
                 </div>
             </div>
@@ -910,12 +991,22 @@
                 <h1>c o d e R e d</h1>
                 <div>
                     <!-- <section class="button1"></section> -->
-                    <section class="button2">Sign Up</section>
+                    <section class="button2" onclick="loginPage()">Sign Up</section>
+                    <section class="button2" onclick="loginPage()">Sign In</section>
                 </div>
             </div>
 
         </section>
         <section id="toggle-section">
+            <section id="login-page">
+                <form action="login.html" class="box" method="POST">
+
+                    <h1>login</h1>
+                    <input type="text" name="" placeholder="Enter Username" id="username">
+                    <input type="password" name="" placeholder="Enter Password" id="password">
+                    <input type="submit" name="" value="Login" onclick="validate()">
+                </form>
+            </section>
 
             <section id="subject-section">
                 <div class="sub">
@@ -1484,6 +1575,25 @@
             document.getElementById( "classwork-section" ).style.display = "none";
             document.getElementById( "subject-section" ).style.display = "none";
             // document.getElementById( "footer" ).style.display = "block";
+        }
+        function validate()
+        {
+            var username = document.getElementById( "username" ).value;
+            var password = document.getElementById( "password" ).value;
+            if ( username == "admin" && password == "user" )
+            {
+                // alert( "login successfully" );
+                // return false;
+            }
+            else
+            {
+                // alert( "login failed" );
+            }
+            document.getElementById( "login-page" ).style.display = "none";
+        }
+        function loginPage()
+        {
+            document.getElementById( "login-page" ).style.display = "block";
         }
     </script>
 </body>
