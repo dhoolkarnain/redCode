@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bahianita&display=swap" rel="stylesheet">
     <title>codeRed.com</title>
     <style>
@@ -449,6 +450,7 @@
             /* teacher wala hissa */
             #teachers-section {
                 margin-top: 20px;
+                margin-bottom: 200px;
                 /* border: 2px solid green; */
                 display: none;
                 /* position: absolute; */
@@ -934,6 +936,145 @@
                 cursor: pointer;
             }
 
+            /* body {
+                height: 100vh;
+                width: 100vh;
+                background: url(image/reading.jpg) no-repeat center;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+            justify-content: center;
+        }
+        
+        */
+            .profile-card {
+                /* border: 2px solid rgb(56, 3, 3); */
+                margin: 18px;
+                /* width: 100%; */
+                /* height: 100%; */
+                text-align: center;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            .card-header {
+
+                background: rgb(56, 3, 3);
+                padding: 60px 40px;
+            }
+
+            .pic {
+                /* width: 50px; */
+                /* height: 50px; */
+                display: inline-block;
+                padding: 3px;
+                background: linear-gradient(130deg, #74b9ff, #e66767);
+                margin: auto;
+                border-radius: 50%;
+                animation: animated-gradient 2s linear infinite;
+            }
+
+            @keyframes animated-gradient {
+                25% {
+                    background-image: left bottom;
+                }
+
+                50% {
+                    background-image: right bottom;
+                }
+
+                75% {
+                    background-image: right top;
+                }
+
+                100% {
+                    background-image: left top;
+                }
+            }
+
+            .pic img {
+                display: block;
+                width: 47px;
+                height: 47px;
+                border-radius: 50%;
+            }
+
+            .name {
+                color: white;
+                font-size: 20px;
+                font-weight: 600;
+                margin: 5px 0;
+            }
+
+            .desc {
+                font-size: 14px;
+                color: orange;
+            }
+
+            .sm {
+                display: flex;
+                justify-content: center;
+                margin: 15px 0;
+            }
+
+            .sm a {
+                text-decoration: none;
+                color: white;
+                width: 56px;
+                font-size: 15px;
+                transition: .3s linear;
+            }
+
+            .sm a:hover {
+                color: orange;
+            }
+
+            .contact-btn {
+                display: inline-block;
+                padding: 8px 40px;
+                color: orange;
+                border: 2px solid orange;
+                border-radius: 6px;
+                margin-top: 16px;
+                transition: .3s linear;
+                text-decoration: none;
+            }
+
+            .contact-btn:hover {
+                background: orange;
+                color: white;
+            }
+
+            .card-footer {
+                background: rgb(206, 206, 206);
+                padding: 30px 10px;
+            }
+
+            .numbers {
+                display: flex;
+                align-items: center;
+            }
+
+            .item {
+                flex: 1;
+                text-transform: uppercase;
+                font-size: 15px;
+                color: orange;
+                cursor: pointer;
+            }
+
+            .item span {
+                display: block;
+                color: #2c3a47;
+                font-size: 15px;
+            }
+
+            .border {
+                width: 1px;
+                height: 30px;
+                background: orange;
+            }
+
 
         }
     </style>
@@ -1114,21 +1255,143 @@
             </section>
             <!-- teacher wala section -->
             <section id="teachers-section">
-                <div class="staff" onclick="teacherDetail()" id="teacher-sufyan">
-                    <div class="teacher-dp">
-                        <img src="image/dp.jpg" alt="">
+                <div class="profile-card">
+                    <div class="card-header">
+                        <div class="pic">
+                            <img src="image/dp.jpg" alt="">
+                        </div>
+                        <div class="name">Sufyan Ahmad Ansari</div>
+                        <div class="desc">A Professional motivational speaker</div>
+                        <div class="sm">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-github"></a>
+                            <a href="#" class="fab fa-youtube"></a>
+                        </div>
+                        <a href="#" class="contact-btn">Contact Me</a>
 
                     </div>
-                    <div class="teachers-profile">
-                        <div class="teacher-name">
-                            <label for="">Sufyan Ahmad Ansari</label>
-                            <img src="" alt="">
+                    <div class="card-footer">
+                        <div class="numbers">
+                            <div class="item">
+                                <span>120</span>
+                                Posts
+                            </div>
+                            <div class="border"></div>
+                            <div class="item">
+                                <span>12</span>
+                                Following
+                            </div>
+                            <div class="border"></div>
+                            <div class="item">
+                                <span>200M</span>
+                                Followers
+                            </div>
                         </div>
-                        <div class="teacher-tag">
-                            senior staff
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="card-header">
+                        <div class="pic">
+                            <img src="image/dp.jpg" alt="">
                         </div>
-                        <div class="teacher-description">
-                            A young , motivational lecturer
+                        <div class="name">Sufyan Ahmad Ansari</div>
+                        <div class="desc">A Professional motivational speaker</div>
+                        <div class="sm">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-github"></a>
+                            <a href="#" class="fab fa-youtube"></a>
+                        </div>
+                        <a href="#" class="contact-btn">Contact Me</a>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="numbers">
+                            <div class="item">
+                                <span>120</span>
+                                Posts
+                            </div>
+                            <div class="border"></div>
+                            <div class="item">
+                                <span>12</span>
+                                Following
+                            </div>
+                            <div class="border"></div>
+                            <div class="item">
+                                <span>200M</span>
+                                Followers
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="card-header">
+                        <div class="pic">
+                            <img src="image/dp.jpg" alt="">
+                        </div>
+                        <div class="name">Sufyan Ahmad Ansari</div>
+                        <div class="desc">A Professional motivational speaker</div>
+                        <div class="sm">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-github"></a>
+                            <a href="#" class="fab fa-youtube"></a>
+                        </div>
+                        <a href="#" class="contact-btn">Contact Me</a>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="numbers">
+                            <div class="item">
+                                <span>120</span>
+                                Posts
+                            </div>
+                            <div class="border"></div>
+                            <div class="item">
+                                <span>12</span>
+                                Following
+                            </div>
+                            <div class="border"></div>
+                            <div class="item">
+                                <span>200M</span>
+                                Followers
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="card-header">
+                        <div class="pic">
+                            <img src="image/dp.jpg" alt="">
+                        </div>
+                        <div class="name">Sufyan Ahmad Ansari</div>
+                        <div class="desc">A Professional motivational speaker</div>
+                        <div class="sm">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-github"></a>
+                            <a href="#" class="fab fa-youtube"></a>
+                        </div>
+                        <a href="#" class="contact-btn">Contact Me</a>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="numbers">
+                            <div class="item">
+                                <span>120</span>
+                                Posts
+                            </div>
+                            <div class="border"></div>
+                            <div class="item">
+                                <span>12</span>
+                                Following
+                            </div>
+                            <div class="border"></div>
+                            <div class="item">
+                                <span>200M</span>
+                                Followers
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1198,10 +1461,10 @@
                     </div>
                     <div class="social-media">
                         <label for="">Follow Us</label>
-                        <div class="social" id="facebook"> <a href="#">f</a> </div>
+                        <div class="social" id="facebook"> <a href="#">&#Xf39e</a> </div>
                         <div class="social" id="youtube"> <a href="#">You<span>Tube</span></a> </div>
                         <div class="social" id="twitter"> <a href="#">t</a> </div>
-                        <div class="social" id="instagram"> <a href="#">in</a> </div>
+                        <div class="fab fa-github" id="instagram"> <a href="#"></a> </div>
                     </div>
                     <div class="social-notification">
 
