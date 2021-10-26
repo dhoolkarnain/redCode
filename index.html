@@ -764,86 +764,58 @@
                 display: flex;
                 margin-top: 10px;
                 align-items: center;
-                flex-direction: row;
+                /* flex-direction: row; */
+                color: white;
             }
 
             .social-logo {
+                /* border: 2px solid white; */
                 width: 100%;
-                color: white;
-                font-size: 20px;
-                /* border: 2px solid red; */
-                /* margin: 10px; */
-
+                height: 100%;
             }
 
             .social-media {
+                /* width: 30%; */
+                /* padding-left: 2px; */
+                /* margin: 0; */
                 width: 100%;
-                /* border: 2px solid red; */
+                height: 100%;
                 display: flex;
-                flex-direction: row;
-                font-size: 10px;
-                /* margin: 10px; */
-                color: white;
-
-            }
-
-            .social-media label {
                 /* border: 2px solid white; */
-                display: flex;
-                align-items: center;
-                padding-right: 15px;
-
-            }
-
-            .social {
-                padding: 3px;
-                /* border: 2px solid white; */
-            }
 
 
-            .social a {
-                font-weight: 900;
-                color: white;
-                text-decoration: none;
-
-            }
-
-            #facebook {
-                /* border: 2px solid white; */
-                border-radius: 10px;
-                background-color: blue;
-                /* padding: 3px; */
-                color: white;
-            }
-
-            #twitter a {
-                color: rgb(0, 225, 255);
-            }
-
-            #instagram a {
-                border: ;
-                /* border: 2px solid white; */
-            }
-
-            .social-media div a span {
-                /* border: 2px solid white; */
-                border-radius: 6px;
-                background-color: red;
-                padding: 1px;
-
-                color: white;
-
-            }
-
-            .social-media img {
-                background-color: white;
             }
 
             .social-notification {
+                /* border: 2px solid white; */
                 width: 100%;
-                /* border: 2px solid red; */
-                /* margin: 10px; */
+                /* height: 100%; */
             }
+
+
+            .social-media p {
+                /* height: 100%; */
+                font-size: 10px;
+                padding-right: 6px;
+                /* border: 2px solid white; */
+            }
+
+            .social-media a {
+                font-size: 10px;
+                /* border: 2px solid white; */
+                color: white;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                /* padding-left: 2px; */
+                /* margin-left: 4px; */
+                margin-right: 12px;
+
+            }
+
+
 
             #privacy {
                 display: flex;
@@ -917,8 +889,6 @@
                 /* cursor: pointer; */
             }
 
-
-
             .box input[type="submit"] {
                 /* border: 0; */
                 background: none;
@@ -936,17 +906,6 @@
                 cursor: pointer;
             }
 
-            /* body {
-                height: 100vh;
-                width: 100vh;
-                background: url(image/reading.jpg) no-repeat center;
-                background-size: cover;
-                display: flex;
-                align-items: center;
-            justify-content: center;
-        }
-        
-        */
             .profile-card {
                 /* border: 2px solid rgb(56, 3, 3); */
                 margin: 18px;
@@ -955,11 +914,13 @@
                 text-align: center;
                 border-radius: 8px;
                 overflow: hidden;
+                border: 2px solid rgb(56, 3, 3);
+                height: 80%;
+                /* width: 60%; */
             }
 
             .card-header {
 
-                background: rgb(56, 3, 3);
                 padding: 60px 40px;
             }
 
@@ -1000,7 +961,7 @@
             }
 
             .name {
-                color: white;
+                color: rgb(56, 3, 3);
                 font-size: 20px;
                 font-weight: 600;
                 margin: 5px 0;
@@ -1019,7 +980,7 @@
 
             .sm a {
                 text-decoration: none;
-                color: white;
+                color: rgb(56, 3, 3);
                 width: 56px;
                 font-size: 15px;
                 transition: .3s linear;
@@ -1032,8 +993,8 @@
             .contact-btn {
                 display: inline-block;
                 padding: 8px 40px;
-                color: orange;
-                border: 2px solid orange;
+                color: rgb(56, 3, 3);
+                border: 2px solid rgb(56, 3, 3);
                 border-radius: 6px;
                 margin-top: 16px;
                 transition: .3s linear;
@@ -1059,7 +1020,7 @@
                 flex: 1;
                 text-transform: uppercase;
                 font-size: 15px;
-                color: orange;
+                color: rgb(56, 3, 3);
                 cursor: pointer;
             }
 
@@ -1072,7 +1033,7 @@
             .border {
                 width: 1px;
                 height: 30px;
-                background: orange;
+                background: rgb(56, 3, 3);
             }
 
 
@@ -1460,11 +1421,11 @@
                         <p>codeRed</p>
                     </div>
                     <div class="social-media">
-                        <label for="">Follow Us</label>
-                        <div class="social" id="facebook"> <a href="#">&#Xf39e</a> </div>
-                        <div class="social" id="youtube"> <a href="#">You<span>Tube</span></a> </div>
-                        <div class="social" id="twitter"> <a href="#">t</a> </div>
-                        <div class="fab fa-github" id="instagram"> <a href="#"></a> </div>
+                        <p for="">Follow Us</p>
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                        <a href="#" class="fab fa-instagram"></a>
                     </div>
                     <div class="social-notification">
 
